@@ -28,7 +28,7 @@ jobs:
       - name: Push To Docker Hub
         uses: redhat-actions/push-to-registry@v2.1.1
         with:
-          image: awx-ee
+          image: evit15/awx-ee
           tags: ${{ github.event.release.tag_name }}
           registry: dokcer.io/evit15/
           username: ${{ secrets.DOCKER_USERNAME }}
