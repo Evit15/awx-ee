@@ -24,11 +24,11 @@ jobs:
         env:
           DOCKER_BUILDKIT: 1
         run: |
-          tox -e docker -- --tag=evit15/awx-ee:${{ github.event.release.tag_name }}
+          tox -e docker -- --tag=awx-ee:${{ github.event.release.tag_name }}
       - name: Push To Docker Hub
         uses: redhat-actions/push-to-registry@v2.1.1
         with:
-          image: evit15/awx-ee
+          image: awx-ee
           tags: ${{ github.event.release.tag_name }}
           registry: dokcer.io/evit15/
           username: ${{ secrets.DOCKER_USERNAME }}
