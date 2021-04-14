@@ -30,6 +30,6 @@ jobs:
         with:
           image: awx-ee
           tags: ${{ github.event.release.tag_name }}
-          registry: dokcer.io/evit15/
+          registry: docker.io/evit15/
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
