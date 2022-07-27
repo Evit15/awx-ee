@@ -13,3 +13,4 @@ collections:
   - name: ansible.windows
   - name: community.general
   - name: redhatinsights.insights
+  - name: community.windows
