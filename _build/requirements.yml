@@ -14,3 +14,4 @@ collections:
   - name: community.general
   - name: redhatinsights.insights
   - name: community.windows
+  - name: chocolatey.chocolatey
